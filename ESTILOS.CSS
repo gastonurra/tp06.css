@@ -1,0 +1,51 @@
+style body {
+    background-color: black;
+    font-size: medium;
+}
+
+h1 {
+    color: blue;
+    background-color: aquamarine;
+    font-size: medium;
+}
+
+p {
+    color: red;
+    font-size: large;
+}
+
+.encabezado {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.parrafo {
+    text-align: justify;
+    text-transform: lowercase;
+    font-size: 24px;
+}
+
+#fondo {
+    background-color: #000000;
+}
+
+p a {
+    color: #ffffff;
+    text-decoration: overline;
+}
+
+.parrafodeejemplos {
+    color: rgb(245, 12, 12);
+    background-color: aquamarine;
+    font-size: medium;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    line-height: normal;
+}

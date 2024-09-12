@@ -20,69 +20,110 @@
         sus elementos.</h2>
     <p> <img src="csspartes.3d2bee5.aa01c55ea5fd8ecd1ae1116d536b4e85.png" alt="imagen"></p>
     <h2>¿Qué es un selector en CSS?</h2>
-    <p>Selector: selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos "p"). Para dar estilo a un elemento diferente, solo cambia el selector.</p>
+    <p>Selector: selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos "p"). Para dar estilo a un
+        elemento diferente, solo cambia el selector.</p>
     <h2>Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente. </h2>
     <p>Selector universal
         Nos permite aplicar estilos a todos los elementos HTML de un documento y se indica mediante el *.
         * {
-            color:red;
+        color:red;
         }
         Todos los elementos HTML tendrán un color de texto red.
         Selector por etiquetas
-        Aplicamos propiedades CSS a una etiqueta. La misma se identifica sin utilizar <>. Por ejemplo.
+        Aplicamos propiedades CSS a una etiqueta. La misma se identifica sin utilizar >. Por ejemplo.
         p {
-            color:red;
+        color:red;
         }
         Podemos, seleccionar varias etiquetas al mismo tiempo concatenándolas con el signo , (coma). Por ejemplo:
         p,h1 {
-            color:red;
+        color:red;
         }
-        En el ejemplo anterior, tanto la p como la h1 tendrán de color de letra roja. Reordar que se aplicarán a todas las etiquetas del documento HTML.
+        En el ejemplo anterior, tanto la p como la h1 tendrán de color de letra roja. Reordar que se aplicarán a todas
+        las etiquetas del documento HTML.
         Selector descendente
-        Con este selector seleccionamos un elemento que está dentro de otro del mismo tipo. Estos seectores siempre están formados por dos o más selectores separados entre si. El último selector será el elemento HTML al que se le aplicará las propiedades de CSS.
+        Con este selector seleccionamos un elemento que está dentro de otro del mismo tipo. Estos seectores siempre
+        están formados por dos o más selectores separados entre si. El último selector será el elemento HTML al que se
+        le aplicará las propiedades de CSS.
         Por ejemplo:
         p span {
-            color:green;
+        color:green;
         }
         Selector de clases
-        Los selectores de clases comienzan siempre por un . (punto). Los clientes web (navegadores) identifican este punto y lo distinguen del resto de los selectores.
+        Los selectores de clases comienzan siempre por un . (punto). Los clientes web (navegadores) identifican este
+        punto y lo distinguen del resto de los selectores.
         Por ejemplo:
-        <p class="primer-parrafo">Texto de un párrafo</p>
-        Para definir en HTML el uso de los selectores de clase, se utiliza el atributo class.
-        En css se aplica así:
-        .primer-parrafo {
-            font-size: 2em; 
-        }
-        A todas las etiquetas que tengan la clase primer-parrafo, se aplicará un font-size (tamaño de letra) específico.
-        Las clases pueden ser utilizadas varias veces y en distintas etiquetas, lo que nos hace pensar que es necesario ver cuales son la características que queremos aplicar a las etiquetas que sean comunes a varias.
-        A su vez, podemos seleccionar un conjunto de etiquetas que selecione todas las etiquetas que tengan una clase particular.
-        p.primer-parrafo {
-            color: #445544;
-        }
-        En el ejemplo anterior, seleccionamos todos los párrafos que tengan la clase primer-parrafo y le aplicamos un color de letra especial.
-        Selector de ID
-        Este tipo de selector es igual al de clase, aunque lo aplicaremos a un único elemento HTML de nuestra página. Esto se debe a que el atributo ID de HTML identifica a un elemento HTML por medio de un nombre. Por ejemplo:
-        <h1 id="titulo">Título Principal</h1>
-        Para aplicar CSS solamente a ID titulo, tendremos que seleccionar dicho ID utilizar el # seguido del nombre:
-        #titulo {
-            color: violet;
-        }
-        De la misma forma que el caso anterior, podemos seleccionar un elemento basado en el id. Por ejemplo:
-        a#titulo {
-            color: red;
-        }
-        En el ejemplo anterior se aplicará la propiedad color a la etiqueta a (anchor) que tenga el ID #titulo.</p>
+    <p class="primer-parrafo">Texto de un párrafo</p>
+    Para definir en HTML el uso de los selectores de clase, se utiliza el atributo class.
+    En css se aplica así:
+    .primer-parrafo {
+    font-size: 2em;
+    }
+    A todas las etiquetas que tengan la clase primer-parrafo, se aplicará un font-size (tamaño de letra) específico.
+    Las clases pueden ser utilizadas varias veces y en distintas etiquetas, lo que nos hace pensar que es necesario ver
+    cuales son la características que queremos aplicar a las etiquetas que sean comunes a varias.
+    A su vez, podemos seleccionar un conjunto de etiquetas que selecione todas las etiquetas que tengan una clase
+    particular.
+    p.primer-parrafo {
+    color: #445544;
+    }
+    En el ejemplo anterior, seleccionamos todos los párrafos que tengan la clase primer-parrafo y le aplicamos un color
+    de letra especial.
+    Selector de ID
+    Este tipo de selector es igual al de clase, aunque lo aplicaremos a un único elemento HTML de nuestra página. Esto
+    se debe a que el atributo ID de HTML identifica a un elemento HTML por medio de un nombre. Por ejemplo:
+    <h1 id="titulo">Título Principal</h1>
+    Para aplicar CSS solamente a ID titulo, tendremos que seleccionar dicho ID utilizar el # seguido del nombre:
+    #titulo {
+    color: violet;
+    }
+    De la misma forma que el caso anterior, podemos seleccionar un elemento basado en el id. Por ejemplo:
+    a#titulo {
+    color: red;
+    }
+    En el ejemplo anterior se aplicará la propiedad color a la etiqueta a (anchor) que tenga el ID #titulo.</p>
     <h2> ¿Cuáles son las tres formas para vincular CSS con HTML?</h2>
-    <p> las tres formas son:<ol>
-    <li>En nuestro HTML y dentro de la etiqueta head utilizaremos la etiqueta style es decir que los CSS se aplican al MISMO docuemnto HTML.</li>
-    <li>En nuestro HTML aplicaremos estilos directamente a la etiqueta. Recordemos que los atributos con características de un etiqueta.</li>
-    <li>esta opción es la que nos permite vincular un archivo HTML con un archivo CSS. Los archivos CSS tienen extensión .css. Suelen llamarse estilos.css, style.css o también podés darle el nombre que prefieras para tu proyecto.
-        Si trabajamos en Visual Studio Code, podemos organizar los archivos CSS dentro de una carpeta llamada css. En el head del HTML debemos utilizar la etiqueta link</li>
+    <p> las tres formas son:
+        CSS Externo: Para un diseño organizado y reutilizable.
+        CSS Interno: Para aplicar estilos a una sola página.
+        CSS en línea: Para aplicar estilos rápidos a elementos individuales (menos recomendado para grandes proyectos)
+    <ol>
+        <li>En nuestro HTML y dentro de la etiqueta head utilizaremos la etiqueta style es decir que los CSS se aplican
+            al MISMO docuemnto HTML.</li>
+        <li>En nuestro HTML aplicaremos estilos directamente a la etiqueta. Recordemos que los atributos con
+            características de un etiqueta.</li>
+        <li>esta opción es la que nos permite vincular un archivo HTML con un archivo CSS. Los archivos CSS tienen
+            extensión .css. Suelen llamarse estilos.css, style.css o también podés darle el nombre que prefieras para tu
+            proyecto.
+            Si trabajamos en Visual Studio Code, podemos organizar los archivos CSS dentro de una carpeta llamada css.
+            En el head del HTML debemos utilizar la etiqueta link</li>
     </ol>
     </p>
     <h2>1.9</h2>
-    
+
     <p>tienen el mismo HTML cambiando algunas pequeñas cosas pero el CSS es totalmente distinto</p>
     <h2>2.0</h2>
+    <p> "line-height" Define la altura de línea del texto. valores posibles normal, 1.5, 2, 20px, 1.2em
+        <br>"color" Define el color del texto.valores posibles son los colores ejemplo red,green,white y hexadecimal
+        <br>"background-color" Define el color del fondo del texto.valores posibles son los colores ejemplo
+        red,green,white,yellow,hexadecimal y rgb
+        <br>"font-size" Define el tamaño de la fuente del texto. valores posibles unidades absolutas,12px.unidades
+        relativas 1em.palabras claves small medium
+        <br>"font-weight" Define el grosor de la fuente del texto (por ejemplo, si se trata de texto en negrita o
+        normal). valores posibles
+        <br>"font-style" Define el estilo de la fuente del texto (por ejemplo, si es cursiva o normal). valores posibles
+        normal italic oblique
+        <br>"font-family" Define el tipo de letra a utilizar para el texto. valores posibles Tipos de fuente: "Arial",
+        "Times New Roman", "Courier New" Grupos de fuentes genéricos: serif, sans-serif, monospace, cursive, fantasy
+        <br>"text-align" Define la alineación horizontal del texto (izquierda, centro o derecha). valores posibles
+        right,left,center y justify
+        <br>"text-decoration" Define la decoración del texto (por ejemplo, si está subrayado o tachado). valores
+        posibles none,underline,overline,line-through,blink
+        <br>"text-transform" Define la transformación del texto (por ejemplo, en mayúsculas o minúsculas). valores
+        posibles none,uppercase,lowercase,capitalize
+        <br>"letter-spacing" Define el espacio entre letras. valores posibles normal, 2px, 0.1em, -0.05em
+    </p>
+    <h2>2.1</h2>
+    <a href="2.1.html"></a>
 </body>
+
 </html>
