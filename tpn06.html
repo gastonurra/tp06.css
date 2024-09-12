@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividades</title>
+</head>
+
+<body>
+    <h1>actividades</h1>
+    <h2>¿que significa css?</h2>
+    <p>Cascading Style Sheets</p>
+    <h2>¿para que sirve css y que programa se utiliza para interpretar?</h2>
+    <p>sirve para crear un diseño y lo interpreta el navegador</p>
+    <h2>¿A qué se llama regla de CSS? </h2>
+    <p>Se llama patrón de elementos y otros términos que indican al navegador qué elementos HTML se seleccionan para
+        aplicarles una regla que incluye los valores de las propiedades CSS. </p>
+    <h2> ¿Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva explicar
+        sus elementos.</h2>
+    <p> <img src="csspartes.3d2bee5.aa01c55ea5fd8ecd1ae1116d536b4e85.png" alt="imagen"></p>
+    <h2>¿Qué es un selector en CSS?</h2>
+    <p>Selector: selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos "p"). Para dar estilo a un elemento diferente, solo cambia el selector.</p>
+    <h2>Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente. </h2>
+    <p>Selector universal
+        Nos permite aplicar estilos a todos los elementos HTML de un documento y se indica mediante el *.
+        * {
+            color:red;
+        }
+        Todos los elementos HTML tendrán un color de texto red.
+        Selector por etiquetas
+        Aplicamos propiedades CSS a una etiqueta. La misma se identifica sin utilizar <>. Por ejemplo.
+        p {
+            color:red;
+        }
+        Podemos, seleccionar varias etiquetas al mismo tiempo concatenándolas con el signo , (coma). Por ejemplo:
+        p,h1 {
+            color:red;
+        }
+        En el ejemplo anterior, tanto la p como la h1 tendrán de color de letra roja. Reordar que se aplicarán a todas las etiquetas del documento HTML.
+        Selector descendente
+        Con este selector seleccionamos un elemento que está dentro de otro del mismo tipo. Estos seectores siempre están formados por dos o más selectores separados entre si. El último selector será el elemento HTML al que se le aplicará las propiedades de CSS.
+        Por ejemplo:
+        p span {
+            color:green;
+        }
+        Selector de clases
+        Los selectores de clases comienzan siempre por un . (punto). Los clientes web (navegadores) identifican este punto y lo distinguen del resto de los selectores.
+        Por ejemplo:
+        <p class="primer-parrafo">Texto de un párrafo</p>
+        Para definir en HTML el uso de los selectores de clase, se utiliza el atributo class.
+        En css se aplica así:
+        .primer-parrafo {
+            font-size: 2em; 
+        }
+        A todas las etiquetas que tengan la clase primer-parrafo, se aplicará un font-size (tamaño de letra) específico.
+        Las clases pueden ser utilizadas varias veces y en distintas etiquetas, lo que nos hace pensar que es necesario ver cuales son la características que queremos aplicar a las etiquetas que sean comunes a varias.
+        A su vez, podemos seleccionar un conjunto de etiquetas que selecione todas las etiquetas que tengan una clase particular.
+        p.primer-parrafo {
+            color: #445544;
+        }
+        En el ejemplo anterior, seleccionamos todos los párrafos que tengan la clase primer-parrafo y le aplicamos un color de letra especial.
+        Selector de ID
+        Este tipo de selector es igual al de clase, aunque lo aplicaremos a un único elemento HTML de nuestra página. Esto se debe a que el atributo ID de HTML identifica a un elemento HTML por medio de un nombre. Por ejemplo:
+        <h1 id="titulo">Título Principal</h1>
+        Para aplicar CSS solamente a ID titulo, tendremos que seleccionar dicho ID utilizar el # seguido del nombre:
+        #titulo {
+            color: violet;
+        }
+        De la misma forma que el caso anterior, podemos seleccionar un elemento basado en el id. Por ejemplo:
+        a#titulo {
+            color: red;
+        }
+        En el ejemplo anterior se aplicará la propiedad color a la etiqueta a (anchor) que tenga el ID #titulo.</p>
+    <h2> ¿Cuáles son las tres formas para vincular CSS con HTML?</h2>
+    <p> las tres formas son:<ol>
+    <li>En nuestro HTML y dentro de la etiqueta head utilizaremos la etiqueta style es decir que los CSS se aplican al MISMO docuemnto HTML.</li>
+    <li>En nuestro HTML aplicaremos estilos directamente a la etiqueta. Recordemos que los atributos con características de un etiqueta.</li>
+    <li>esta opción es la que nos permite vincular un archivo HTML con un archivo CSS. Los archivos CSS tienen extensión .css. Suelen llamarse estilos.css, style.css o también podés darle el nombre que prefieras para tu proyecto.
+        Si trabajamos en Visual Studio Code, podemos organizar los archivos CSS dentro de una carpeta llamada css. En el head del HTML debemos utilizar la etiqueta link</li>
+    </ol>
+    </p>
+    <h2>1.9</h2>
+    
+    <p>tienen el mismo HTML cambiando algunas pequeñas cosas pero el CSS es totalmente distinto</p>
+    <h2>2.0</h2>
+</body>
+</html>
